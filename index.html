@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Healthy Living provides guidance on nutrition, fitness, and wellness for a balanced lifestyle.">
+    <meta name="keywords" content="healthy living, nutrition, fitness, wellness, lifestyle">
+    <meta name="author" content="Healthy Living Team">
+    <title>Healthy Living</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(to right, #a8c0ff, #c2e9fb);
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar li {
+            margin: 0 1rem;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+            color: #e2e2e2;
+        }
+        main {
+            padding: 1rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            color: #4CAF50;
+            font-size: 1.75rem;
+            font-weight: 700;
+            text-align: center;
+        }
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .testimonial {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial p {
+            font-style: italic;
+            margin: 0;
+        }
+        .contact-form {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+
+        /* Mobile styles (320px) */
+        @media (max-width: 320px) {
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar li {
+                margin: 0.5rem 0;
+            }
+            main {
+                padding: 0.5rem;
+            }
+        }
+
+        /* Tablet styles (720px) */
+        @media (min-width: 321px) and (max-width: 720px) {
+            .navbar ul {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .navbar li {
+                margin: 0 0.5rem;
+            }
+            main {
+                padding: 1rem;
+            }
+        }
+
+        /* Laptop styles (1080px) */
+        @media (min-width: 721px) and (max-width: 1080px) {
+            .navbar ul {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .navbar li {
+                margin: 0 1rem;
+            }
+            main {
+                padding: 2rem;
+            }
+        }
+
+        /* Desktop styles (above 1080px) */
+        @media (min-width: 1081px) {
+            .navbar ul {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .navbar li {
+                margin: 0 1.5rem;
+            }
+            main {
+                padding: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Healthy Living</h1>
+        <nav class="navbar" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="fitness.html">Fitness</a></li>
+                <li><a href="wellness.html">Wellness</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to Healthy Living</h2>
+        <p>Your guide to a balanced lifestyle through nutrition, fitness, and wellness.</p>
+        <img src="homeliving.png" alt="Healthy Living Lifestyle" loading="lazy">
+        
+        <section>
+            <h3>What is Healthy Living?</h3>
+            <p>Healthy living is a lifestyle that enhances your overall well-being. It encompasses eating nutritious foods, staying physically active, managing stress, and fostering healthy relationships.</p>
+        </section>
+        
+        <section>
+            <h3>Benefits of Healthy Living</h3>
+            <ul>
+                <li>Improved mental health</li>
+                <li>Increased energy levels</li>
+                <li>Better weight management</li>
+                <li>Reduced risk of chronic diseases</li>
+                <li>Enhanced quality of life</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Healthy Eating Tips</h3>
+            <p>Adopt a balanced diet with a variety of nutrients. Here are some tips:</p>
+            <ul>
+                <li>Include a variety of fruits and vegetables in your meals.</li>
+                <li>Choose whole grains over refined grains.</li>
+                <li>Stay hydrated by drinking plenty of water.</li>
+                <li>Limit processed foods and added sugars.</li>
+                <li>Monitor portion sizes to avoid overeating.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h3>Exercise Routines</h3>
+            <p>Regular physical activity is essential for a healthy lifestyle. Consider the following exercise routines:</p>
+            <ul>
+                <li>Cardio exercises like running, cycling, or swimming.</li>
+                <li>Strength training with weights or resistance bands.</li>
+                <li>Flexibility exercises like yoga or stretching.</li>
+                <li>Balance exercises to improve stability and prevent falls.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h3>Mental Health and Wellness</h3>
+            <p>Maintaining mental well-being is crucial for overall health. Here are some strategies:</p>
+            <ul>
+                <li>Practice mindfulness and meditation.</li>
+                <li>Engage in hobbies and activities you enjoy.</li>
+                <li>Seek professional help if needed.</li>
+                <li>Build and maintain strong social connections.</li>
+                <li>Manage stress through relaxation techniques.</li>
+            </ul>
+        </section>
+
+        <section class="testimonial">
+            <h3>What Our Users Say</h3>
+            <p>"Healthy Living has transformed my lifestyle! The tips on nutrition and fitness are incredibly helpful." - Jane D.</p>
+            <p>"I love the variety of exercises and wellness advice. It's made a real difference in my life." - Mark S.</p>
+        </section>
+
+        <section class="contact-form">
+            <h3>Contact Us</h3>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Healthy Living</p>
+    </footer>
+    <script>
+        // Update the year in the footer dynamically
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
